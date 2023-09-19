@@ -11,5 +11,7 @@ internal static partial class Program
         Console.WriteLine($"Hello {contract.Name}!");
 
         AttributeBasedMagic.SayHello();
+        
+        new Generated.Contracts.Customer();
     }
 }
