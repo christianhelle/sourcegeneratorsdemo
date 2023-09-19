@@ -1,3 +1,6 @@
+
+namespace SourceGeneratorDemo;
+
 public class FooContract
 {
     public string? Name { get; set; }
