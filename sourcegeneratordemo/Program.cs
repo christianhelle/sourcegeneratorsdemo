@@ -12,6 +12,6 @@ internal static partial class Program
 
         AttributeBasedMagic.SayHello();
         
-        new Generated.Contracts.Customer();
+        // new Generated.Contracts.Customer();
     }
 }
