@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/sourcegeneratorsdemo.sln",
+                "${workspaceFolder}/SourceGeneratorsdemo.sln",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/sourcegeneratorsdemo.sln",
+                "${workspaceFolder}/SourceGeneratorsdemo.sln",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -33,7 +33,7 @@
                 "watch",
                 "run",
                 "--project",
-                "${workspaceFolder}/sourcegeneratorsdemo.sln"
+                "${workspaceFolder}/SourceGeneratorsdemo.sln"
             ],
             "problemMatcher": "$msCompile"
         }

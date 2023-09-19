@@ -9,9 +9,9 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/sourcegeneratordemo/bin/Debug/net8.0/sourcegeneratordemo.dll",
+            "program": "${workspaceFolder}/SourceGeneratorDemo/bin/Debug/net8.0/SourceGeneratorDemo.dll",
             "args": [],
-            "cwd": "${workspaceFolder}/sourcegeneratordemo",
+            "cwd": "${workspaceFolder}/SourceGeneratorDemo",
             "console": "internalConsole",
             "stopAtEntry": false
         },
