@@ -5,7 +5,7 @@ VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SourceGeneratorDemo", "SourceGeneratorDemo\SourceGeneratorDemo.csproj", "{59275EE2-0767-42D8-BE4D-A3E15F617C20}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SourceGenerator", "SourceGeneratorDemo\SourceGenerator.csproj", "{5E2F21F9-13C3-4242-8470-4265EBE377D3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SourceGenerator", "SourceGenerator\SourceGenerator.csproj", "{5E2F21F9-13C3-4242-8470-4265EBE377D3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
