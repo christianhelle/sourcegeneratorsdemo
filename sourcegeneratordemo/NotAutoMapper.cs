@@ -1,5 +1,7 @@
 using Riok.Mapperly.Abstractions;
 
+namespace SourceGeneratorDemo;
+
 [Mapper]
 public static partial class NotAutoMapper
 {

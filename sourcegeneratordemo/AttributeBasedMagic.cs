@@ -1,6 +1,6 @@
-using sourcegenerator;
+using SourceGenerator;
 
-namespace sourceggeneratordemo;
+namespace SourceGeneratorDemo;
 
 [SprinkleMagic]
 public static partial class AttributeBasedMagic

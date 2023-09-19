@@ -1,4 +1,4 @@
-﻿namespace sourceggeneratordemo;
+﻿namespace SourceGeneratorDemo;
 
 static partial class Program
 {

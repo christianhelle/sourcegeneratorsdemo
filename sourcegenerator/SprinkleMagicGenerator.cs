@@ -6,7 +6,7 @@ using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.CodeAnalysis.Text;
 
-namespace sourcegenerator;
+namespace SourceGenerator;
 
 public class SprinkleMagicAttribute : Attribute { }
 
@@ -49,7 +49,7 @@ public class SprinkleMagicGenerator : ISourceGenerator
                 }
 
                 var relatedClass = semanticModel.GetTypeInfo(nodes.Last().Parent);
-                var stringBuilder = this.GenerateClass("sourceggeneratordemo", declaredClass.Identifier.ToString());
+                var stringBuilder = this.GenerateClass("SourceGeneratorDemo", declaredClass.Identifier.ToString());
 
                 foreach (MethodDeclarationSyntax classMethod in declaredClass.Members.Where(m => m.IsKind(SyntaxKind.MethodDeclaration)).OfType<MethodDeclarationSyntax>())
                 {
