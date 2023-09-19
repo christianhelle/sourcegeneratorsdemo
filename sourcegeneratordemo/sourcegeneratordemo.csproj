@@ -10,7 +10,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Riok.Mapperly" Version="2.7.0" />    
+    <PackageReference Include="Riok.Mapperly" Version="2.7.0" />
+    <PackageReference Include="AutoCtor" Version="2.0.0" />
     <ProjectReference Include="../SourceGenerator/SourceGenerator.csproj" 
                       OutputItemType="Analyzer" />
   </ItemGroup>
