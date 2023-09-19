@@ -4,7 +4,7 @@ using NSwag;
 using NSwag.CodeGeneration.CSharp;
 
 [Generator]
-public class ContractsGenerator : ISourceGenerator
+public class OpenApiContractsGenerator : ISourceGenerator
 {
     public void Execute(GeneratorExecutionContext context)
     {

@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <AdditionalFiles Include="**/*.openapi.json" />
+    <AdditionalFiles Include="petstore.openapi.json" />
   </ItemGroup>
 
 </Project>
