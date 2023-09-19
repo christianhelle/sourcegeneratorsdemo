@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <EmitCompilerGeneratedFiles>true</EmitCompilerGeneratedFiles>
+    <EnforceExtendedAnalyzerRules>false</EnforceExtendedAnalyzerRules>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Riok.Mapperly" Version="2.7.0" />
+    <ProjectReference Include="../sourcegenerator/sourcegenerator.csproj" 
+                      OutputItemType="Analyzer" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Include="**/*.openapi.json" />
+  </ItemGroup>
+
+</Project>
