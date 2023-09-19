@@ -1,8 +1,8 @@
 ﻿namespace SourceGeneratorDemo;
 
-static partial class Program
+internal static partial class Program
 {
-    static void Main()
+    private static void Main()
     {
         HelloWorldGenerated.HelloWorld.SayHello();
 

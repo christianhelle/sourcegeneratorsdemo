@@ -8,7 +8,7 @@ public class HelloWorldGenerator : ISourceGenerator
     public void Execute(GeneratorExecutionContext context)
     {
         context.AddSource(
-            "HelloWorldGenerator", 
+            "HelloWorldGenerator.g",
             SourceText.From(
                 """
                 namespace HelloWorldGenerated 
@@ -19,10 +19,11 @@ public class HelloWorldGenerator : ISourceGenerator
                             Console.WriteLine("Hello from generated code!");
                     }
                 }
-                """, 
+                """,
                 Encoding.UTF8));
-        
     }
 
-    public void Initialize(GeneratorInitializationContext context) { }
+    public void Initialize(GeneratorInitializationContext context)
+    {
+    }
 }

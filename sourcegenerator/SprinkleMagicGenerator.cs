@@ -1,14 +1,10 @@
-using System;
 using System.Linq;
 using System.Text;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.CodeAnalysis.Text;
-
-namespace SourceGenerator;
-
-public class SprinkleMagicAttribute : Attribute { }
+using SourceGenerator;
 
 [Generator]
 public class SprinkleMagicGenerator : ISourceGenerator
@@ -57,7 +53,7 @@ public class SprinkleMagicGenerator : ISourceGenerator
                 }
 
                 this.CloseClass(stringBuilder);
-                context.AddSource($"{declaredClass.Identifier}_{relatedClass.Type.Name}", SourceText.From(stringBuilder.ToString(), Encoding.UTF8));
+                context.AddSource($"{declaredClass.Identifier}.g", SourceText.From(stringBuilder.ToString(), Encoding.UTF8));
             }
         }
     }
@@ -69,7 +65,7 @@ public class SprinkleMagicGenerator : ISourceGenerator
 
     private void GenerateMethod(MethodDeclarationSyntax methodDeclaration, ref StringBuilder builder)
     {
-        var signature = $"{methodDeclaration.Modifiers} {methodDeclaration.ReturnType} {methodDeclaration.Identifier}(";
+        var signature = $"        {methodDeclaration.Modifiers} {methodDeclaration.ReturnType} {methodDeclaration.Identifier}(";
         var parameters = methodDeclaration.ParameterList.Parameters;
         signature += string.Join(", ", parameters.Select(p => p.ToString())) + ")";
         builder.AppendLine(signature + " => System.Console.WriteLine(\"Greetings from magic sprinkle generator!\");");
